@@ -15,10 +15,10 @@
             <div class="pr-4"><strong>2</strong> followers</div>
             <div class="pr-4"><strong>16</strong> following</div>
         </div>
-        <div class="pt-4" font-weight-> emvoltadaingla </div>
-        <div class="pt-4"> Help our channel to grow so we can play more and give more games:) 🎮⚽🎮 </div>
 
-        <div> <a href="#">CodeHakingGram</a></div>
+        <div class="pt-4 font-weight-bold"> {{ $user->profile->title }}</div>
+        <div class="pt-4">{{ $user->profile->description }}</div>
+        <div> <a href="#">{{ $user->profile->url }}</a></div>
 
         <div class="row pt-5">
             <div class="col-4">
