@@ -6,14 +6,24 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
-    //
+
 
     public function create()
     {
 
-    public view('posts.create');
+    return view('posts.create');
     }
 
+    public function store()
+    {
+        $data = request()->validate([
 
+            'caption' => 'required',
+            'image' => ['required', 'image'],
+
+        ]);
+
+        dd(request()->all());
+    }
 
 }
